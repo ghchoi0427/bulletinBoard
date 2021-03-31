@@ -39,7 +39,7 @@ public class BoardController {
     //게시글 상세내용 조회
     @RequestMapping(value = "view.do", method = RequestMethod.GET)
     public ModelAndView view(@RequestParam int bno, HttpSession httpSession) throws Exception {
-        boardService.increaseViewCnt(bno, session);
+        boardService.increaseViewcnt(bno, session);
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("board/view");
         modelAndView.addObject("dto", boardService.read(bno));
