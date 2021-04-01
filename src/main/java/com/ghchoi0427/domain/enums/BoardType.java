@@ -1,4 +1,4 @@
-package com.ghchoi0427.enums;
+package com.ghchoi0427.domain.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
