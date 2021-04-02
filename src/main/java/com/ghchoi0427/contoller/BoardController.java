@@ -1,6 +1,9 @@
 package com.ghchoi0427.contoller;
 
+import com.ghchoi0427.domain.Board;
+import com.ghchoi0427.repository.BoardService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
