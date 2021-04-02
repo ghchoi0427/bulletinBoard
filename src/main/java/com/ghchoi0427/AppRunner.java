@@ -1,6 +1,7 @@
 package com.ghchoi0427;
 
 import com.ghchoi0427.domain.User;
+import com.ghchoi0427.domain.Board;
 import com.ghchoi0427.domain.enums.BoardType;
 import com.ghchoi0427.repository.BoardRepository;
 import com.ghchoi0427.repository.UserRepository;
