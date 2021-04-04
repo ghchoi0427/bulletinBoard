@@ -8,10 +8,12 @@ import com.ghchoi0427.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 import java.util.stream.IntStream;
 
+@Component
 public class AppRunner implements ApplicationRunner {
 
     @Autowired
@@ -24,6 +26,7 @@ public class AppRunner implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         User user = userRepository.save(User.builder()
                 .name("ghchoi0427")
+                .password("ghchoi0427")
                 .email("ghchoi0427@gmail.com")
                 .createdDate(LocalDateTime.now())
                 .build());
@@ -37,6 +40,5 @@ public class AppRunner implements ApplicationRunner {
                         .createdDate(LocalDateTime.now())
                         .updatedDate(LocalDateTime.now())
                         .user(user).build()));
-
     }
 }
