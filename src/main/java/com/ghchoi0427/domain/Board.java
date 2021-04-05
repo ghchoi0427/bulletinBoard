@@ -28,10 +28,6 @@ public class Board {
     @Column
     private String subTitle;
 
-    public String getContent() {
-        return content;
-    }
-
     @Column
     private String content;
 
